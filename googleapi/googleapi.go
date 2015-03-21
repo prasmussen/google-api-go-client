@@ -302,6 +302,10 @@ var (
 	chunkSize int64 = 1 << 18
 )
 
+func SetChunkSize(size int64) {
+	chunkSize = size
+}
+
 // Progress returns the number of bytes uploaded at this point.
 func (rx *ResumableUpload) Progress() int64 {
 	rx.mu.Lock()
