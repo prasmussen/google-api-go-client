@@ -299,7 +299,7 @@ var (
 	rangeRE = regexp.MustCompile(`^0\-(\d+)$`)
 	// chunkSize is the size of the chunks created during a resumable upload and should be a power of two.
 	// 1<<18 is the minimum size supported by the Google uploader, and there is no maximum.
-	chunkSize int64 = 1 << 18
+	chunkSize int64 = 1 << 20
 )
 
 func SetChunkSize(size int64) {
