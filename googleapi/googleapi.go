@@ -24,7 +24,7 @@ import (
 	"time"
 
 	"golang.org/x/net/context"
-	"google.golang.org/api/googleapi/internal/uritemplates"
+	"github.com/prasmussen/google-api-go-client/googleapi/internal/uritemplates"
 )
 
 // ContentTyper is an interface for Readers which know (or would like
